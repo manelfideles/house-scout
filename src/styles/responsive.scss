@@ -1,0 +1,17 @@
+@mixin mobileBreakpoint() {
+    @media (max-width: 480px){
+        @content
+    }
+}
+
+@mixin tabletBreakpoint() {
+    @media (max-width: 768px){
+        @content
+    }
+}
+
+@mixin smallScreenBreakpoint() {
+    @media (max-width: 1200px){
+        @content
+    }
+}

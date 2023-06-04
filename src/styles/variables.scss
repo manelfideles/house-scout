@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Poppins:wght@400;500;600&display=swap');
+
+$poppins: 'Poppins', sans-serif;
+$manrope: 'Manrope', sans-serif;
+
+$radiusSmall: 0.375rem;
+$radiusLarge: 0.625rem;
+$shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+
+$white: #ffffff;
+$black: #000000;
+
+$primaryDark50: #0C102F;
+$primaryDark40: #141A4E;
+$primaryDark30: #1F2775;
+$primaryDark20: #29349B;
+$primaryDark10: #3341C2;
+$primary: #3D4EE9;
+$primaryLight10: #5D6CED;
+$primaryLight20: #7E89F0;
+$primaryLight30: #9EA7F4;
+$primaryLight40: #BEC4F8;
+$primaryLight50: #D8DCFB;
+
+$secondaryDark50: #332407;
+$secondaryDark40: #553C0C;
+$secondaryDark30: #805B12;
+$secondaryDark20: #AA7918;
+$secondaryDark10: #D5971E;
+$secondary: #FFB524;
+$secondaryLight10: #FFC149;
+$secondaryLight20: #FFCE6D;
+$secondaryLight30: #FFDA92;
+$secondaryLight40: #FFE6B6;
+$secondaryLight50: #FFF0D3;
+
+$warningDark20: #804703;
+$warningDark10: #D57605;
+$warning: #FF8D06;
+$warningLight10: #FFA030;
+$warningLight20: #FFC683;
+$warningLight30: #FFE8CD;
+
+$successDark20: #205D4F;
+$successDark10: #359A83;
+$success: #3FB99D;
+$successLight10: #5FC5AD;
+$successLight20: #9FDCCE;
+$successLight30: #D9F1EB;
+
+$dangerDark20: #73281D;
+$dangerDark10: #BF4230;
+$danger: #E54F3A;
+$dangerLight10: #E96C5B;
+$dangerLight20: #F2A79D;
+$dangerLight30: #FADCD8;
+
+$neutralDark40: #292929;
+$neutralDark30: #666666;
+$neutralDark20: #888888;
+$neutralDark10: #AAAAAA;
+$neutral: #CCCCCC;
+$neutralLight10: #DDDDDD;
+$neutralLight20: #EEEEEE;

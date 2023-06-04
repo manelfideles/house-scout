@@ -1,0 +1,64 @@
+@import './mixins.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include font();
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+span {
+  word-break: break-word;
+}
+
+h1 {
+  @include font($fontFamily: $poppins, $fontWeight: 600, $fontSize: 2.5rem, $letterSpacing: -0.02em);
+}
+
+h2 {
+  @include font($fontFamily: $poppins, $fontWeight: 600, $fontSize: 2rem, $letterSpacing: -0.02em);
+}
+
+h3 {
+  @include font($fontFamily: $poppins, $fontWeight: 600, $fontSize: 1.5rem, $letterSpacing: -0.02em);
+}
+
+h4 {
+  @include font($fontFamily: $poppins, $fontWeight: 500, $fontSize: 1.25rem);
+}
+
+h5 {
+  @include font($fontFamily: $poppins, $fontWeight: 500, $fontSize: 1rem);
+}
+
+h6 {
+  @include font($fontFamily: $poppins, $fontWeight: 400, $fontSize: 0.75rem);
+  text-transform: uppercase;
+}
+
+a {
+  @include font($fontWeight: 500, $lineHeight: 140%);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

@@ -1,0 +1,30 @@
+@import '../../styles/mixins.scss';
+
+.legendContainer {
+	@include container($padding: 1rem 2rem);
+	position: absolute;
+	bottom: 2rem;
+	left: 2rem;
+
+	>h4 {
+		margin-bottom: 1rem;
+	}
+
+	.domainContainer {
+		@include flex($alignItems: center, $gap: 0.5rem);
+
+		>span {
+			margin-right: 1rem;
+		}
+
+		.marker {
+			@include flex($flexDirection: column, $gap: 0);
+
+			>div {
+				@include size(15px, 15px);
+				@include container(4px, $boxShadow: none, $border: none);
+			}
+		}
+
+	}
+}

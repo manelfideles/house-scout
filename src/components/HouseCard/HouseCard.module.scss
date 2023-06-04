@@ -1,0 +1,52 @@
+@import '../../styles/mixins.scss';
+
+.houseCardContainer {
+	@include grid(1fr, repeat(3, 1fr));
+	@include container($padding: 1rem);
+	margin: 2rem 0;
+
+	>img {
+		@include container($boxShadow: none, $border: none);
+		@include size(100%, 100%);
+		object-fit: cover;
+		max-height: 10rem;
+	}
+
+	.cardInfo {
+		.poiScores {
+			margin-top: 0.25rem;
+
+			>p {
+				@include grid(1fr, repeat(2, auto), $gap: 0);
+				padding: 0.25rem 0;
+
+				>span {
+					@include font($fontWeight: 600, $fontSize: 1rem);
+					width: fit-content;
+				}
+
+				>div {
+					text-align: right;
+				}
+			}
+
+		}
+	}
+
+	.scorePublisherWrapper {
+		@include flex($flexDirection: column, $justifyContent: space-between);
+
+		.houseScore {
+			@include container($padding: 1rem, $border: none);
+			@include font($fontSize: 1.5rem, $fontWeight: 700, $color: $white);
+		}
+
+		.publisherContainer {
+			@include flex($gap: 0.5rem, $flexDirection: column);
+
+			>img {
+				width: 50%;
+			}
+		}
+	}
+}

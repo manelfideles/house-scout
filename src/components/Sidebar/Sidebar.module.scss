@@ -1,0 +1,33 @@
+@import '../../styles/mixins.scss';
+
+.sidebarContainer {
+	@include container($padding: 2rem);
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	width: 30vw;
+	max-height: 90vh;
+	overflow-y: scroll;
+
+	.sidebarHeader {
+		@include flex($justifyContent: space-between);
+
+		>h3>span {
+			text-decoration: underline;
+		}
+
+		>span {
+			@include font($fontWeight: 700, $color: $white);
+			@include container($backgroundColor: $dangerLight10, $padding: 0.5rem 0.75rem);
+			cursor: pointer;
+
+			&:hover {
+				background-color: $dangerDark10;
+			}
+		}
+
+		>p {
+			@include font($fontWeight: 700);
+		}
+	}
+}

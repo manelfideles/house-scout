@@ -1,0 +1,6 @@
+@import '../../styles/mixins.scss';
+
+.loader {
+	@include flex($justifyContent: center, $alignItems: center);
+	width: 100%;
+}
